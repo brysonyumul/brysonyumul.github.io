@@ -1,0 +1,54 @@
+let size = 30;
+
+export default {
+    name:"Enemy2",
+    components:[
+        {
+            type:"RectangleComponent",
+            values:[
+                {
+                    key:"width",
+                    value:size
+                },
+                {
+                    key:"height",
+                    value:size
+                },
+                {
+                    key:"fill",
+                    value:"black"
+                },
+                {
+                    key:"stroke",
+                    value:"black"
+                }
+            ]
+        },
+        {
+            type:"EnemyBehavior",
+            values:[
+                {
+                    key:"isShooter",
+                    value:true
+                }
+            ]
+        },
+        {
+            type:"AABBCollider",
+            values:[
+                {
+                    key:"width",
+                    value:size
+                },
+                {
+                    key:"height",
+                    value:size
+                },
+                {
+                    key:"layer",
+                    value: 99
+                }
+            ]
+        }
+    ]
+}
