@@ -56,7 +56,8 @@ function render25D(){
 }
 
 function setup(){
-    createCanvas(WINDOW_WIDTH, WINDOW_HEIGHT);
+    var myCanvas = createCanvas(WINDOW_WIDTH, WINDOW_HEIGHT);
+    myCanvas.parent("myCanvas");
 }
 
 function update(){
